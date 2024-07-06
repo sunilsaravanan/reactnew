@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;    
+            color: white;
+            font-family: sans-serif;
+        }
+        
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-image: linear-gradient(to right, rgb(96, 96, 228), rgb(1, 1, 241));
+            height: 100vh;
+        }
+        
+        
+        .container{
+            width: auto;
+            height: auto;
+            border: 3px solid white;
+            border-radius: 20px;
+            background-color: transparent;
+            padding: 20px;
+        }
+        #main-heading{
+            font-size: 2rem;
+        }
+        ul{
+            margin-top: 20px;
+        }
+        .list-items{
+            list-style: none;
+            color: black;
+            padding: 10px;
+            background: white;
+            border: 1px  solid black;
+            font-weight: 600;
+            border-bottom: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-heading">Favourite Movie Franchise</h1>
+        <ul>
+            <li class="list-items">The Matrix</li>
+            <li class="list-items">Star Wars</li>
+            <li class="list-items">Harry Potter</li>
+            <li class="list-items">Lord of the Rings</li>
+            <li class="list-items">Marvel</li>
+        </ul>
+    </div>
+    <script src="./script.js">
+    </script>
+</body>
+</html>

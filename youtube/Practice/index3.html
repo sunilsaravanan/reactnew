@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgb(65, 65, 117));
+        background-repeat: none;
+        height: 100vh;
+        color: white;
+        font-size: 3rem;
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      ul {
+        width: auto;
+        height: auto;
+        border: 5px solid white;
+        padding: 20px;
+        border-radius: 15px;
+      }
+      li {
+        list-style: none;
+        border: 3px solid white;
+        margin-top: 5px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="sports">
+      <li id="Football">Football</li>
+      <li id="Basketball">Basketball</li>
+      <li id="Boxing">Boxing</li>
+      <li id="Tennis">Tennis</li>
+      <li id="Golf">Golf</li>
+    </ul>
+    <script>
+      const sports = document.querySelector("#sports");
+
+      sports.addEventListener("click", function (e) {
+        const target = e.target;
+        console.log(`${target.getAttribute("id")}is clicked`);
+
+        if (target.matches("li")) {
+          target.style.background = "gray";
+        }
+      });
+
+      const newSport = document.createElement("li");
+      newSport.innerHTML = `Cricket`;
+      newSport.setAttribute("id", "Cricket");
+
+      sports.append(newSport);
+    </script>
+  </body>
+</html>
